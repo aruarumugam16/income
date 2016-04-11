@@ -1,0 +1,920 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html PUBLIC "" ""><!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]--><!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]--><!--[if !(IE 7) | !(IE 8)  ]><!--><HTML 
+lang="en-US"><!--<![endif]--><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<META charset="UTF-8">	 
+<META content="763699465" property="fb:admins">	 
+<META content="http://www.hongkiat.com/blog/html5-loginpage/" property="og:url">
+	 
+<META content="HTML5 Tutorial: Login Page with HTML5 Forms" property="og:title">
+	 
+<META content="HTML5 brings many features and improvements to web forms, there are new attributes and input types that were introduced mainly to make the lives of web developers easier and provide better experience to web users. So, in this post we are going to create a login page using" 
+property="og:description">	 
+<META content="article" property="og:type">	 
+<META content="http://media02.hongkiat.com/html5-loginpage/cover.jpg" property="og:image"> 
+<META name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> 
+<META name="apple-mobile-web-app-capable" content="yes"> 
+<META name="apple-mobile-web-app-status-bar-style" content="black"> <TITLE>HTML5 
+Tutorial: Login Page with HTML5 Forms - Hongkiat</TITLE> <LINK href="http://gmpg.org/xfn/11" 
+rel="profile"> <LINK href="http://www.hongkiat.com/blog/xmlrpc.php" rel="pingback"> 
+<LINK href="http://mediatemplestatic.hongkiat.netdna-cdn.com/logo/hkdc/favicon.ico" 
+rel="shortcut icon"> <LINK href="http://www.hongkiat.com/blog/wp-content/themes/v6/style.css" 
+rel="stylesheet"> <LINK href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Roboto:400,500" 
+rel="stylesheet" type="text/css"> 
+<STYLE>
+.post-most {
+  position: -webkit-sticky !important;
+  position: -moz-sticky !important;
+  position: sticky !important;
+  top: 50px;
+}
+</STYLE>
+ <!--[if lt IE 9]>
+<link rel="stylesheet" href="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/css/ie.css">
+<![endif]--> <!-- All in One SEO Pack 2.2.7.5 by Michael Torbert of Semper Fi Web Design[1193,1258] --> 
+<META name="description" content="HTML5 brings many features and improvements to web forms, there are new attributes and input types that were introduced mainly to make the lives of web" 
+itemprop="description"> 
+<META name="keywords" content="coding,web design" itemprop="keywords"> <!-- /all in one seo pack --> 
+<LINK title="Hongkiat.com » Feed" href="http://www.hongkiat.com/blog/feed/" rel="alternate" 
+type="application/rss+xml"> <LINK title="Hongkiat.com » Comments Feed" href="http://www.hongkiat.com/blog/comments/feed/" 
+rel="alternate" type="application/rss+xml"> <LINK title="Hongkiat.com » HTML5 Tutorial: Login Page with HTML5 Forms Comments Feed" 
+href="http://www.hongkiat.com/blog/html5-loginpage/feed/" rel="alternate" type="application/rss+xml"> 
+<LINK id="et_monarch-open-sans-css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" 
+rel="stylesheet" type="text/css" media="all"> <LINK id="et_monarch-css-css" 
+href="http://www.hongkiat.com/blog/wp-content/plugins/monarch/css/style.css?ver=1.2.1" 
+rel="stylesheet" type="text/css" media="all"> <LINK id="jetpack_css-css" href="http://www.hongkiat.com/blog/wp-content/plugins/jetpack/css/jetpack.css?ver=3.9.1" 
+rel="stylesheet" type="text/css" media="all"> 
+<SCRIPT src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=1.8.3" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT id="omapi-script" src="http://a.optnmnstr.com/app/js/api.min.js?ver=1.1.4.4" type="text/javascript" data-cfasync="false"></SCRIPT>
+ <LINK href="http://www.hongkiat.com/blog/wp-json/" rel="https://api.w.org/"> 
+<LINK title="20 Realistic Artworks that Look Like Photographs" href="http://www.hongkiat.com/blog/realistic-artworks/" 
+rel="prev"> <LINK title="Time-Tracking Mac Apps for Freelancers – Best Of" href="http://www.hongkiat.com/blog/time-tracking-mac-apps/" 
+rel="next"> <LINK href="http://www.hongkiat.com/blog/html5-loginpage/" rel="canonical"> 
+<LINK href="http://wp.me/p4uxU-3Vb" rel="shortlink"> <LINK href="http://www.hongkiat.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F" 
+rel="alternate" type="application/json+oembed"> <LINK href="http://www.hongkiat.com/blog/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;format=xml" 
+rel="alternate" type="text/xml+oembed"> <LINK href="http://www.hongkiat.com/blog/wp-json" 
+rel="https://github.com/WP-API/WP-API"> 
+<STYLE id="et-social-custom-css" type="text/css"></STYLE>
+
+<STYLE type="text/css">img#wpstats{display:none}</STYLE>
+ 
+<SCRIPT type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') +
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+googletag.cmd.push(function() {
+
+	// posts
+	googletag.defineSlot('/1022251/desktop-page-header-728x90', [728, 90], 'div-gpt-ad-1429563851793-0').addService(googletag.pubads());
+	
+  googletag.defineSlot('/1022251/desktop-page-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1429564651276-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-page-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1429745937703-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-page-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1429747254224-0').addService(googletag.pubads());
+	
+	// posts
+	googletag.defineSlot('/1022251/desktop-post-general-header-728x90', [728, 90], 'div-gpt-ad-1430469216569-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1430471974071-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1430472314053-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1430472980277-0').addService(googletag.pubads());
+
+
+	googletag.defineSlot('/1022251/desktop-post-general-content_down-600x150', [600, 150], 'div-gpt-ad-1430980250389-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-header-728x90', [728, 90], 'div-gpt-ad-1430987932412-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_up-300x250', [300, 250], 'div-gpt-ad-1430988265998-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_middle-300x250', [300, 250], 'div-gpt-ad-1430988560786-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-archive-general-sidebar_down-300x250', [300, 250], 'div-gpt-ad-1430990185185-0').addService(googletag.pubads());
+
+	googletag.defineSlot('/1022251/desktop-post-general-footer-01_up-responsive', [728, 90], 'div-gpt-ad-1442935568936-0').addService(googletag.pubads());
+
+  googletag.defineSlot('/1022251/desktop-post-general-sidebar_top-300x250', [300, 250], 'div-gpt-ad-1446709191646-0').addService(googletag.pubads());
+	
+	googletag.pubads().enableAsyncRendering();
+	googletag.pubads().collapseEmptyDivs();
+	googletag.enableServices();
+});
+</SCRIPT>
+ 
+<SCRIPT src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+ 
+<SCRIPT>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8918970543424762",
+    enable_page_level_ads: true
+  });
+</SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.17126"></HEAD> 
+<BODY class="single single-post postid-15077 single-format-standard et_monarch post-html5-loginpage single-default"><!-- ga --> 
+<SCRIPT type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-275126-1"]);_gaq.push(["_trackPageview"]);(function(){var b=document.createElement("script");b.type="text/javascript";b.async=true;b.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();</SCRIPT>
+ <!-- ga --> 
+<DIV class="mobile-header slideable clearfix" id="mhead">
+<DIV class="nav-icon left" id="panel-left"><SPAN>?</SPAN></DIV>
+<DIV id="mlogo"><A 
+href="http://www.hongkiat.com/blog/"><SPAN>Hongkiat.com</SPAN></A></DIV></DIV><HEADER 
+class="site-header clearfix" id="masthead" role="banner">
+<DIV class="container">
+<DIV class="table-wrap">
+<DIV class="site-branding clearfix left">
+<DIV class="logo"><A 
+href="http://www.hongkiat.com/blog/"><SPAN>Hongkiat.com</SPAN></A></DIV></DIV>
+<DIV class="ads right"><!--
+dfp: fm > bsa > z
+--> <!-- /1022251/desktop-post-general-header-728x90 --> <!-- <div id='div-gpt-ad-1430469216569-0' style='height:90px; width:728px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430469216569-0'); });
+</script>
+</div> --> 
+<SCRIPT src="http://static.fmpub.net/zone/4724" type="text/javascript"></SCRIPT>
+			</DIV></DIV></DIV></HEADER> <NAV class="site-navbar slideable no-sticky clearfix" 
+id="navbar" role="navigation">
+<DIV class="container" id="touch-scroll">
+<DIV class="nav table-wrap">
+<DIV class="primary">
+<UL class="menu" id="menu-primary">
+  <LI class="menu-item menu-home icon-home has-children"><A href="http://www.hongkiat.com/blog/"><SPAN>Home</SPAN></A>
+  <DIV class="sub sub-home">
+  <UL class="sub-list sub-list-home">
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/about-us/">About</A></LI>
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/advertise/">Advertise</A></LI>
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/contact/">Contact</A></LI>
+    <LI class="sub-item"><A href="http://www.hongkiat.com/blog/submit-news-tips/">Submit 
+    Tips</A></LI>
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/authors/">Authors</A></LI>
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/write-for-us/">Write for Us</A></LI>
+    <LI class="sub-item"><A href="http://www.hongkiat.com/blog/publishing-policy/" 
+    target="_blank" rel="nofollow">Publishing Policy</A></LI>
+    <LI class="sub-item"><A href="http://www.hongkiat.com/blog/privacy-policy-for-hongkiatcom/" 
+    target="_blank" rel="nofollow">Privacy</A></LI>
+    <LI class="sub-item"><A 
+    href="http://www.hongkiat.com/blog/sitemap.xml">Sitemap</A></LI></UL></DIV></LI>
+  <LI class="menu-item menu-category icon-code has-children" data-slug="design-dev"><A 
+  href="http://www.hongkiat.com/blog/design-dev/" data-id="132"><SPAN>Design / 
+  Dev</SPAN></A></LI>
+  <LI class="menu-item menu-category icon-desktop has-children" data-slug="technology"><A 
+  href="http://www.hongkiat.com/blog/technology/"><SPAN>Technology</SPAN></A></LI>
+  <LI class="menu-item menu-category icon-lamp has-children" data-slug="inspiration"><A 
+  href="http://www.hongkiat.com/blog/inspiration/"><SPAN>Inspiration</SPAN></A></LI>
+  <LI class="menu-item menu-category icon-users has-children" data-slug="social-commerce"><A 
+  href="http://www.hongkiat.com/blog/social-commerce/"><SPAN>Social 
+  Commerce</SPAN></A></LI>
+  <LI class="menu-item icon-basket"><A href="http://deals.hongkiat.com/" target="_blank" 
+  rel="nofollow"><SPAN>Deals</SPAN></A></LI></UL></DIV>
+<DIV class="site-links-top">
+<H4>Site Links</H4>
+<UL class="clearfix">
+  <LI><A href="http://www.hongkiat.com/blog/about-us/">About Us</A></LI>
+  <LI><A href="http://www.hongkiat.com/blog/authors/">Authors</A></LI>
+  <LI><A href="http://www.hongkiat.com/blog/write-for-us/">Write for Us</A></LI>
+  <LI><A href="http://www.hongkiat.com/blog/contact/">Contact</A></LI>
+  <LI><A href="http://www.hongkiat.com/blog/submit-news-tips/">Submit 
+  Tips</A></LI></UL></DIV><ASIDE class="secondary">
+<DIV class="search right">
+<FORM class="searchform" action="/blog/search" 
+method="get"><INPUT name="q" class="field" onfocus="if(this.value=='Search here...')this.value='';" onblur="if(this.value=='')this.value='Search here...';" type="search" value="Search here...">
+					 </FORM></DIV></ASIDE></DIV></DIV>
+<DIV class="nav-scroll">
+<DIV class="container">
+<UL class="post-navigation">
+  <LI class="next"><A title="Time-Tracking Mac Apps for Freelancers - Best Of" 
+  href="http://www.hongkiat.com/blog/time-tracking-mac-apps/"><SPAN class="arrow">?</SPAN><SPAN 
+  class="title">Time-Tracking Mac Apps for Freelancers - Best Of</SPAN></A></LI>
+  <LI class="prev"><A title="20 Realistic Artworks that Look Like Photographs" 
+  href="http://www.hongkiat.com/blog/realistic-artworks/"><SPAN 
+  class="arrow">?</SPAN><SPAN class="title">20 Realistic Artworks that Look Like 
+  Photographs</SPAN></A></LI></UL>
+<DIV class="access right">
+<DIV class="right">
+<DIV class="nav-toggle-link right"><A id="close-nav" href="http://www.hongkiat.com/blog/html5-loginpage/#">?</A>
+						 <A id="open-nav" 
+href="http://www.hongkiat.com/blog/html5-loginpage/#">?</A>
+					 </DIV></DIV></DIV></DIV></DIV></NAV><main class="slideable site-primary" 
+id="primary" style="opacity: 0;">
+<DIV class="site-content clearfix" id="content">
+<DIV class="clearfix">
+<DIV class="left_panel" role="main"><ARTICLE class="entry-area post-15077 post type-post status-publish format-standard hentry category-coding category-design tag-forms tag-html5 tag-series-html5-css3-tuts" 
+id="post-15077"><HEADER class="entry-header">
+<H1 class="entry-title">HTML5 Tutorial: Login Page with HTML5 Forms</H1>
+<DIV class="entry-meta">
+<UL>
+  <LI class="entry-author"><A title="Posts by Thoriq Firdaus" href="http://www.hongkiat.com/blog/author/thoriq/" 
+  rel="author">Thoriq Firdaus</A> <SPAN class="dash">—</SPAN></LI>
+  <LI class="entry-category"><A title="View all posts in Coding" href="http://www.hongkiat.com/blog/category/coding/">Coding</A></LI></UL></DIV></HEADER>
+<DIV class="entry-content clearfix" itemprop="articleBody"><!-- ads -->		 <!--
+channel:general
+g(general)
+--> 
+<STYLE>
+	.ad-unit-after-title {
+  	display: inline-block;
+  	min-width: 320px;
+  	max-width: 645px !important;
+  	width: 100%; 
+  	height: 115px;
+	}
+</STYLE>
+ 
+<DIV class="ad-unit-after-title">
+<SCRIPT src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+ <!-- After Title (general) --> <INS class="adsbygoogle" style="width: 100%; height: 115px; display: inline-block; min-width: 320px; max-width: 645px;" 
+data-ad-slot="4552539801" data-ad-client="ca-pub-8918970543424762"></INS> 
+<SCRIPT>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</SCRIPT>
+ </DIV><!-- /ads -->		 
+<DIV class="entry-content-inner intxt">
+<DIV class="series"><A href="http://www.hongkiat.com/blog/tag/series-html5-css3-tuts/">This 
+article is part of our <STRONG>"HTML5/CSS3 Tutorials series"</STRONG> - 
+dedicated to help make you a better designer and/or developer. <STRONG><U>Click 
+here</U></STRONG> to see more articles from the same series.</A></DIV>
+<P><A href="http://www.hongkiat.com/blog/tag/series-html5-css3-tuts/" rel="external">HTML5</A> 
+brings many features and improvements to <STRONG>web forms</STRONG>, 
+<STRONG>there are new attributes and input types that were introduced</STRONG> 
+mainly to make the lives of web developers easier and provide better experience 
+to web users.</P>
+<P class="sw">
+<DIV class="et_social_media_wrapper"><IMG width="500" height="300" src="http://media02.hongkiat.com/html5-loginpage/cover.jpg">
+<DIV class="et_social_media et_social_media_hidden et_social_mobile_on">				 
+<DIV class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+<UL class="et_social_icons_container">
+  <LI class="et_social_facebook">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="facebook" rel="nofollow" data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_facebook"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_twitter">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="twitter" rel="nofollow" data-social_link="http://twitter.com/share?text=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms&amp;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;via=hongkiat"><I 
+  class="et_social_icon et_social_icon_twitter"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_googleplus">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="googleplus" rel="nofollow" data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_googleplus"></I>										
+  										 <SPAN class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_pinterest">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="pinterest" rel="nofollow" data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml5-loginpage%2Fcover.jpg&amp;description=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_pinterest"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI></UL></DIV></DIV></DIV>
+<P></P>
+<P>So, in this post we are going to create a login page using <STRONG><A href="http://www.w3.org/TR/html5/forms.html" 
+rel="external">HTML5 forms</A></STRONG> to see how the new added features 
+work.</P>
+<UL class="download download-2c">
+  <LI><A href="http://demo.hongkiat.com/html5-loginpage/index.html" rel="external">Demo</A></LI>
+  <LI><A href="http://demo.hongkiat.com/html5-loginpage/source.zip" rel="external">Download 
+  Source</A></LI></UL>
+<H3>HTML5 Input</H3>
+<P>Let’s take a look at the following markup.</P>
+<PRE class="html" name="code">&lt;section class="loginform cf"&gt;
+&lt;form name="login" action="index_submit" method="get" accept-charset="utf-8"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;label for="usermail"&gt;Email&lt;/label&gt;
+		&lt;input type="email" name="usermail" placeholder="yourname@email.com" required&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;label for="password"&gt;Password&lt;/label&gt;
+		&lt;input type="password" name="password" placeholder="password" required&gt;&lt;/li&gt;
+		&lt;li&gt;
+		&lt;input type="submit" value="Login"&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/form&gt;
+&lt;/section&gt;
+</PRE>
+<P>If you have been working with HTML forms before, this will look familiar. 
+But, you’ll also notice differences there. The inputs have 
+<CODE>placeholder</CODE> and <CODE>required</CODE> attributes, which are new 
+attributes in HTML5.</P>
+<H4>Placeholder</H4>
+<P>The <CODE>placeholder</CODE> attribute allows us to give initial text in the 
+input that will disappear when it is in a <CODE>focus</CODE> state or being 
+filled in. Previously, we used to do it with JavaScript, but now it becomes a 
+lot easier with this new attribute.</P>
+<P class="sw">
+<DIV class="et_social_media_wrapper"><IMG width="500" height="300" src="http://media02.hongkiat.com/html5-loginpage/placeholder.jpg">
+<DIV class="et_social_media et_social_media_hidden et_social_mobile_on">				 
+<DIV class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+<UL class="et_social_icons_container">
+  <LI class="et_social_facebook">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="facebook" rel="nofollow" data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_facebook"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_twitter">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="twitter" rel="nofollow" data-social_link="http://twitter.com/share?text=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms&amp;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;via=hongkiat"><I 
+  class="et_social_icon et_social_icon_twitter"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_googleplus">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="googleplus" rel="nofollow" data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_googleplus"></I>										
+  										 <SPAN class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_pinterest">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="pinterest" rel="nofollow" data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml5-loginpage%2Fplaceholder.jpg&amp;description=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_pinterest"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI></UL></DIV></DIV></DIV>
+<P></P>
+<H4>Required Attribute</H4>
+<P>The <CODE>required</CODE> attribute will set the field to be mandatory and 
+thus should not be left blank before the form is submitted, so when the user 
+hasn’t filled in the field, the following error will appear.</P>
+<P class="sw">
+<DIV class="et_social_media_wrapper"><IMG width="500" height="101" src="http://media02.hongkiat.com/html5-loginpage/required.jpg">
+<DIV class="et_social_media et_social_media_hidden et_social_mobile_on">				 
+<DIV class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+<UL class="et_social_icons_container">
+  <LI class="et_social_facebook">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="facebook" rel="nofollow" data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_facebook"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_twitter">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="twitter" rel="nofollow" data-social_link="http://twitter.com/share?text=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms&amp;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;via=hongkiat"><I 
+  class="et_social_icon et_social_icon_twitter"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_googleplus">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="googleplus" rel="nofollow" data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_googleplus"></I>										
+  										 <SPAN class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_pinterest">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="pinterest" rel="nofollow" data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml5-loginpage%2Frequired.jpg&amp;description=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_pinterest"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI></UL></DIV></DIV></DIV>
+<P></P>
+<P>New selector is also introduced in <A href="http://www.hongkiat.com/blog/tag/css3/" 
+rel="external">CSS3</A>, <CODE>:required</CODE> to target fields with 
+<CODE>required</CODE> attribute. Here is an example;</P>
+<PRE class="css" code="name">input:required {
+	border: 1px solid red;
+}
+</PRE>
+<H4>Email Input Type</H4>
+<P>The first input type is <CODE>email</CODE> which is actually <STRONG>a new 
+field type</STRONG> added in HTML5 as well. The <CODE>email</CODE> type will 
+give basic email address validation in the field. When the user doesn’t fill the 
+field with an email address, the browser will show the following 
+notification;</P>
+<P class="sw">
+<DIV class="et_social_media_wrapper"><IMG width="500" height="101" src="http://media02.hongkiat.com/html5-loginpage/email-address.jpg">
+<DIV class="et_social_media et_social_media_hidden et_social_mobile_on">				 
+<DIV class="et_social_networks et_social_autowidth et_social_darken et_social_left et_social_rounded et_social_outer_dark">
+<UL class="et_social_icons_container">
+  <LI class="et_social_facebook">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="facebook" rel="nofollow" data-social_link="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_facebook"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_twitter">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="twitter" rel="nofollow" data-social_link="http://twitter.com/share?text=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms&amp;url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;via=hongkiat"><I 
+  class="et_social_icon et_social_icon_twitter"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_googleplus">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="googleplus" rel="nofollow" data-social_link="https://plus.google.com/share?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;t=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_googleplus"></I>										
+  										 <SPAN class="et_social_overlay"></SPAN>									 </DIV></LI>
+  <LI class="et_social_pinterest">
+  <DIV class="et_social_share" data-post_id="15077" data-social_type="media" 
+  data-social_name="pinterest" rel="nofollow" data-social_link="http://www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.hongkiat.com%2Fblog%2Fhtml5-loginpage%2F&amp;media=http%3A%2F%2Fmedia02.hongkiat.com%2Fhtml5-loginpage%2Femail-address.jpg&amp;description=HTML5%20Tutorial%3A%20Login%20Page%20with%20HTML5%20Forms"><I 
+  class="et_social_icon et_social_icon_pinterest"></I>																				 <SPAN 
+  class="et_social_overlay"></SPAN>									 </DIV></LI></UL></DIV></DIV></DIV>
+<P></P>
+<P>Using email input types can also give better experience for mobile users, 
+like iPhone and Android users, where it will show the <EM><A href="http://www.bennadel.com/blog/1721-Default-To-The-Numeric-Email-And-URL-Keyboards-On-The-iPhone.htm" 
+rel="external">email-optimized on-screen keyboard</A></EM> with a dedicated 
+<STRONG>“@”</STRONG> button to help type email address faster.</P>
+<H4>The Downsides</H4>
+<P>The new form features offered in HTML5 are powerful and easy to implement, 
+but they are still lack in some areas. For instance;</P>
+<P><STRONG>The <CODE>placeholder</CODE> attribute</STRONG>, is only supported in 
+modern browsers — <STRONG>Firefox 3.7+, Safari 4+, Chrome 4+ and Opera 
+11+</STRONG>. So, should you need it to work in unsupported browsers, you can 
+use <A href="https://github.com/ginader/HTML5-placeholder-polyfill" rel="external">this 
+polyfills</A> in conjunction with <A href="http://www.hongkiat.com/blog/html5-loginpage/modernizr.com" 
+rel="external">Modernizr</A>.</P>
+<P><STRONG>The same thing goes with the <CODE>required</CODE> 
+attribute</STRONG>. The error notification cannot be personalized, the error 
+will remain <STRONG>“Please fill out this field”</STRONG> rather than 
+<STRONG>“Please fill out your First Name”</STRONG>, this attribute support is 
+also limited to the latest browsers.</P>
+<P>So, using <A href="http://www.w3schools.com/js/js_form_validation.asp" rel="external">JavaScript 
+to validate the required field</A> is (so far) a better option.</P>
+<PRE class="javascript" name="code">function validateForm()
+{
+var x=document.forms["login"]["username"].value;
+if (x==null || x=="")
+  {
+  alert("Please fill out the username");
+  return false;
+  }
+}
+</PRE>
+<H3>Styling the Forms</H3>
+<P>Alright, now let’s decorate our login form with CSS. First we will give the 
+background a <A href="http://subtlepatterns.com/purty-wood/" rel="external">wood 
+pattern</A> in the <CODE>html</CODE> tag.</P>
+<PRE class="css" name="code">html {
+	background: url('wood_pattern.png');
+	font-size: 10pt;
+}
+</PRE>
+<P>Then, we need to remove the default padding and margin in <CODE>ul</CODE> tag 
+that wraps the entire <CODE>inputs</CODE> and floats the <CODE>li</CODE> to the 
+left, so the inputs will be displayed horizontally, side by side.</P>
+<PRE class="css" name="code">.loginform ul {
+	padding: 0;
+	margin: 0;
+}
+.loginform li {
+	display: inline;
+	float: left;
+}
+</PRE>
+<P>Since we float the <CODE>li</CODE>, the parents will collapse, so we need to 
+clear things around the parent with the <A href="http://nicolasgallagher.com/micro-clearfix-hack/" 
+rel="external">clearfix hack</A>.</P>
+<PRE class="css" name="code">label {
+	display: block;
+	color: #999;
+}
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
+:focus {
+	outline: 0;
+}
+</PRE>
+<P><A href="http://www.hongkiat.com/blog/a-look-into-css3-negation-not-selector/" 
+rel="external">In CSS3 we have the negation selector</A>. So, we will use it to 
+target <STRONG>inputs</STRONG> other than the <CODE>submit</CODE> type, which in 
+this case<STRONG> will target the email and password input</STRONG>;</P>
+<PRE class="css" name="code">.loginform input:not([type=submit]) {
+	padding: 5px;
+	margin-right: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 3px;
+	box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1), 
+				0px 1px 0px 0px rgba(250, 250, 250, 0.5) ;
+}
+</PRE>
+<P>Lastly, we will give a little style decoration for the 
+<STRONG>Submit</STRONG> button, as follows.</P>
+<PRE class="css" name="code">.loginform input[type=submit] {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	background: #64c8ef; /* Old browsers */
+	background: -moz-linear-gradient(top,  #64c8ef 0%, #00a2e2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#64c8ef), color-stop(100%,#00a2e2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #64c8ef 0%,#00a2e2 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #64c8ef 0%,#00a2e2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#64c8ef', endColorstr='#00a2e2',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	padding: 5px 15px;
+	margin-right: 0;
+	margin-top: 15px;
+	border-radius: 3px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+}
+</PRE>
+<P>That’s it, now you can try the login form from the following links.</P>
+<UL class="download download-2c">
+  <LI><A href="http://demo.hongkiat.com/html5-loginpage/index.html" rel="external">Demo</A></LI>
+  <LI><A href="http://demo.hongkiat.com/html5-loginpage/source.zip" rel="external">Download 
+  Source</A></LI></UL>
+<H3>Final Words</H3>
+<P>In this tutorial we looked into a few new features in HTML5 
+forms:<CODE>placeholder</CODE>, <CODE>required</CODE> and <CODE>email</CODE> 
+input types to create a simple login page. We have also come through the 
+downsides of the attributes, so we can decide a better approach to be 
+applied.</P>
+<P>In the next post we will look into another new HTML5 form features, so stay 
+tuned.</P></DIV><!-- ads -->		 <!-- dfp: g --> <!-- /1022251/desktop-post-general-content_down-custom --> 
+<DIV id="desktop-post-general-content_down-custom" style="width: 100%; max-width: 650px;">
+<SCRIPT type="text/javascript">
+	  adUnit = document.getElementById("desktop-post-general-content_down-custom");
+	  adWidth = adUnit.offsetWidth;
+	  
+	  google_ad_client = "ca-pub-8918970543424762";
+	  google_ad_slot = "5791071802";
+	  google_ad_channel = '4314338609';
+	  google_override_format = true;
+	  
+	  google_ad_width = adWidth;
+	  google_ad_height = 250;
+	  
+	  google_font_face = 'helvetica';
+	  google_max_num_ads     = '1';
+  </SCRIPT>
+   
+<SCRIPT src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></SCRIPT>
+ </DIV><!-- /ads -->			 </DIV><!-- .entry-content -->	 <FOOTER class="entry-footer">
+<DIV class="related-post clearfix">
+<H3>Readers also read:</H3>
+<DIV class="clearfix" id="related-entries">
+<UL class="clearfix" id="related-items">
+  <LI class="clearfix"><FIGURE class="entry-thumbnail small"><A title="Continue reading - Wrapping Content In Shapes With CSS3" 
+  href="http://www.hongkiat.com/blog/css3-content-wrapping/"><IMG src="http://media03.hongkiat.com/thumbs/150x96/css3-content-wrapping.jpg">
+  							 </A>						 </FIGURE>
+  <H4 class="entry-title"><A href="http://www.hongkiat.com/blog/css3-content-wrapping/" 
+  rel="bookmark">Wrapping Content In Shapes With CSS3</A>						 </H4></LI>
+  <LI class="clearfix"><FIGURE class="entry-thumbnail small"><A title="Continue reading - Working with Text in Scalable Vector Graphics (SVG)" 
+  href="http://www.hongkiat.com/blog/scalable-vector-graphics-text/"><IMG src="http://media03.hongkiat.com/thumbs/150x96/scalable-vector-graphics-text.jpg">
+  							 </A>						 </FIGURE>
+  <H4 class="entry-title"><A href="http://www.hongkiat.com/blog/scalable-vector-graphics-text/" 
+  rel="bookmark">Working with Text in Scalable Vector Graphics (SVG)</A>
+  						 </H4></LI>
+  <LI class="clearfix"><FIGURE class="entry-thumbnail small"><A title="Continue reading - Working with Code Snippets in Sublime Text" 
+  href="http://www.hongkiat.com/blog/sublime-code-snippets/"><IMG src="http://media03.hongkiat.com/thumbs/150x96/sublime-code-snippets.jpg">
+  							 </A>						 </FIGURE>
+  <H4 class="entry-title"><A href="http://www.hongkiat.com/blog/sublime-code-snippets/" 
+  rel="bookmark">Working with Code Snippets in Sublime Text</A>
+						 </H4></LI></UL></DIV>
+<DIV id="wsj"><!-- BEGIN ADAPTIVE EMBED CODE-->				 
+<SCRIPT src="https://cdn-v2.mediagraph.com/video-js/2.0/_onescreen.js"></SCRIPT>
+					 
+<DIV id="os_dmp_embed"></DIV>
+<SCRIPT>
+					  window.os_env_prop = "agora-consumer.mediagraph.com"
+					  com.onescreen.widgets.load('OUUt1u6nGuOuftQI', 'os_dmp_embed');
+					</SCRIPT>
+				 <NOSCRIPT>This application requires JavaScript.</NOSCRIPT>				 <!-- END ADAPTIVE EMBED CODE-->
+			 </DIV></DIV>
+<DIV class="tag-list">
+<UL>
+  <LI class="tag-heading">Read more posts on:</LI>
+  <LI><A href="http://www.hongkiat.com/blog/tag/forms/" 
+rel="tag">forms</A></LI>,
+  <LI><A href="http://www.hongkiat.com/blog/tag/html5/" 
+rel="tag">html5</A></LI>,
+  <LI><A href="http://www.hongkiat.com/blog/tag/series-html5-css3-tuts/" rel="tag">HTML5 
+  / CSS3 Tutorials</A></LI></UL></DIV></FOOTER><!-- .entry-meta -->			 
+<DIV class="ad ads-desktop sBF_banner"><!--
+dfp: bsa
+--> <!-- /1022251/desktop-post-general-content_down-600x150 --> 
+<DIV id="div-gpt-ad-1430980250389-0" style="width: 600px; height: 150px;">
+<SCRIPT type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430980250389-0'); });
+</SCRIPT>
+ </DIV></DIV>
+<DIV class="ad ads-desktop fmpub">
+<SCRIPT src="http://static.fmpub.net/zone/7972" type="text/javascript"></SCRIPT>
+			</DIV></ARTICLE><!-- #post-## -->			
+<DIV class="comments-area" id="comments">
+<DIV id="disqus_thread"></DIV></DIV><!-- #comments -->			 </DIV><!-- .left_panel --> 
+<DIV class="sidebar" id="secondary" role="complementary"><ASIDE class="widget form-subscribe clearfix">
+<FORM name="mc-embedded-subscribe-form" class="validate" id="mc-embedded-subscribe-form" 
+action="http://hongkiat.us1.list-manage.com/subscribe/post?u=2cad5936fa92d77b81f41d691&amp;id=e23e003d87" 
+method="post" target="_blank"><LABEL for="mce-EMAIL">Get daily articles in your 
+inbox for free.</LABEL>
+<DIV 
+class="inputwrap clearfix"><INPUT name="EMAIL" class="email" id="mce-EMAIL" required="" onfocus="if(this.value=='Insert email address')this.value='';" onblur="if(this.value=='')this.value='Insert email address';" type="email" value="Insert email address">
+				 <SPAN class="input-button"><INPUT name="subscribe" class="button" id="mc-embedded-subscribe" type="submit" value="Subscribe!">
+				 </SPAN>			 </DIV></FORM></ASIDE>  		 
+<DIV id="div-gpt-ad-1446709191646-0" style="border: 0px currentColor; border-image: none; width: 300px; height: 250px; margin-bottom: 20px;">
+<SCRIPT type="text/javascript">
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1446709191646-0'); });
+		</SCRIPT>
+	 </DIV><ASIDE class="widget post-most clearfix" id="post-most-widget"><!-- start loop -->
+		 
+<DIV style="width: 300px;">
+<SCRIPT src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async=""></SCRIPT>
+			 <!-- sidebar native -->			 <INS class="adsbygoogle" style="width: 100%; height: 150px; display: inline-block; min-width: 300px; max-width: 1200px;" 
+data-ad-slot="6551833404" data-ad-client="ca-pub-8918970543424762"></INS>			 
+<SCRIPT>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</SCRIPT>
+		 </DIV>
+<H3 class="widget-title">Popular in Coding</H3>
+<DIV class="clearfix" id="most-items">
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - 10 Awesome PostCSS Plugins to Make You a CSS Wizard" 
+href="http://www.hongkiat.com/blog/postcss-plugins/" rel="nofollow"><IMG width="150" 
+height="96" src="http://media03.hongkiat.com/thumbs/150x96/postcss-plugins.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/postcss-plugins/" 
+rel="nofollow">10 Awesome PostCSS Plugins to Make You a CSS Wizard</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - ECMAScript 6 – 10 Awesome New Features" 
+href="http://www.hongkiat.com/blog/ecmascript-6/" rel="nofollow"><IMG width="150" 
+height="96" src="http://media03.hongkiat.com/thumbs/150x96/ecmascript-6.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/ecmascript-6/" 
+rel="nofollow">ECMAScript 6 – 10 Awesome New Features</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - 20 Awesome Christmas Projects Hidden in CodePen" 
+href="http://www.hongkiat.com/blog/christmas-experiment-codepen/" 
+rel="nofollow"><IMG width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/christmas-experiment-codepen.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/christmas-experiment-codepen/" 
+rel="nofollow">20 Awesome Christmas Projects Hidden in CodePen</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - 10 Ways You Can Contribute to The Open Source Community" 
+href="http://www.hongkiat.com/blog/open-source-community-give-back/" rel="nofollow"><IMG 
+width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/open-source-community-give-back.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/open-source-community-give-back/" 
+rel="nofollow">10 Ways You Can Contribute to The Open Source Community</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV><!--
+dfp: fm > z > g
+--> <!-- /1022251/desktop-post-general-sidebar_up-300x250 --> 
+<DIV id="div-gpt-ad-1430471974071-0">
+<SCRIPT type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430471974071-0'); });
+</SCRIPT>
+ </DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - 30 Regex Code Snippets All Web Developers Should Know" 
+href="http://www.hongkiat.com/blog/regex-web-developers/" rel="nofollow"><IMG 
+width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/regex-web-developers.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/regex-web-developers/" 
+rel="nofollow">30 Regex Code Snippets All Web Developers Should Know</A></H4>
+<DIV class="entry-meta"><A title="Posts by Jake Rocheleau" href="http://www.hongkiat.com/blog/author/jake/" 
+rel="author">Jake Rocheleau</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - How to Build a Simple Advent Calendar in JavaScript" 
+href="http://www.hongkiat.com/blog/advent-calendar-javascript/" 
+rel="nofollow"><IMG width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/advent-calendar-javascript.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/advent-calendar-javascript/" 
+rel="nofollow">How to Build a Simple Advent Calendar in JavaScript</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - CSS – margin:auto – How it Works" 
+href="http://www.hongkiat.com/blog/css-margin-auto/" rel="nofollow"><IMG width="150" 
+height="96" src="http://media03.hongkiat.com/thumbs/150x96/css-margin-auto.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/css-margin-auto/" 
+rel="nofollow">CSS – margin:auto – How it Works</A></H4>
+<DIV class="entry-meta"><A title="Posts by Preethi Ranjit" href="http://www.hongkiat.com/blog/author/preethi/" 
+rel="author">Preethi Ranjit</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - How to Animate a Dashed Border with CSS" 
+href="http://www.hongkiat.com/blog/css-animated-dashed-border/" 
+rel="nofollow"><IMG width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/css-animated-dashed-border.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/css-animated-dashed-border/" 
+rel="nofollow">How to Animate a Dashed Border with CSS</A></H4>
+<DIV class="entry-meta"><A title="Posts by Preethi Ranjit" href="http://www.hongkiat.com/blog/author/preethi/" 
+rel="author">Preethi Ranjit</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - How to Create Skewed Edges With CSS" 
+href="http://www.hongkiat.com/blog/skewed-edges-css/" rel="nofollow"><IMG width="150" 
+height="96" 
+src="http://media03.hongkiat.com/thumbs/150x96/skewed-edges-css.jpg">		 </A>
+	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/skewed-edges-css/" 
+rel="nofollow">How to Create Skewed Edges With CSS</A></H4>
+<DIV class="entry-meta"><A title="Posts by Agus" href="http://www.hongkiat.com/blog/author/agus/" 
+rel="author">Agus</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - 10 (More) CSS Tricks You Probably Overlooked" 
+href="http://www.hongkiat.com/blog/css-tricks-more/" rel="nofollow"><IMG width="150" 
+height="96" src="http://media03.hongkiat.com/thumbs/150x96/css-tricks-more.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/css-tricks-more/" 
+rel="nofollow">10 (More) CSS Tricks You Probably Overlooked</A></H4>
+<DIV class="entry-meta"><A title="Posts by Preethi Ranjit" href="http://www.hongkiat.com/blog/author/preethi/" 
+rel="author">Preethi Ranjit</A>			</DIV></DIV></DIV><!--
+dfp: z > g
+--> <!-- /1022251/desktop-post-general-sidebar_middle-300x250 --> <!-- <div id='div-gpt-ad-1430472314053-0' style='height:250px; width:300px;'> --> 
+<DIV id="div-gpt-ad-1430472314053-0">
+<SCRIPT type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430472314053-0'); });
+</SCRIPT>
+ </DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - CSS Floats Explained in 5 Questions" 
+href="http://www.hongkiat.com/blog/css-floats/" rel="nofollow"><IMG width="150" 
+height="96" src="http://media03.hongkiat.com/thumbs/150x96/css-floats.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/css-floats/" rel="nofollow">CSS 
+Floats Explained in 5 Questions</A></H4>
+<DIV class="entry-meta"><A title="Posts by Preethi Ranjit" href="http://www.hongkiat.com/blog/author/preethi/" 
+rel="author">Preethi Ranjit</A>			</DIV></DIV></DIV>
+<DIV class="post most-item clearfix">
+<DIV class="entry-thumbnail small"><A title="Continue reading - A Look Into: ARIA Web Standards &amp; HTML Apps Accessibility" 
+href="http://www.hongkiat.com/blog/aria-web-standards/" rel="nofollow"><IMG 
+width="150" height="96" src="http://media03.hongkiat.com/thumbs/150x96/aria-web-standards.jpg">
+		 </A>	 </DIV>
+<DIV class="entry-content">
+<H4 class="entry-title"><A href="http://www.hongkiat.com/blog/aria-web-standards/" 
+rel="nofollow">A Look Into: ARIA Web Standards &amp; HTML Apps 
+Accessibility</A></H4>
+<DIV class="entry-meta"><A title="Posts by Anna Monus" href="http://www.hongkiat.com/blog/author/anna_monus/" 
+rel="author">Anna Monus</A>			</DIV></DIV></DIV><!--
+dfp: bsa
+--> <!-- /1022251/desktop-post-general-sidebar_down-300x250 --> 
+<LI id="div-gpt-ad-1430472980277-0">
+<SCRIPT type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1430472980277-0'); });
+</SCRIPT>
+ </LI></DIV></ASIDE> </DIV></DIV><!-- .table-wrap -->						 
+<DIV class="single-more clearfix" id="single-more-posts">
+<DIV class="single-more-ad" id="desktop-post-general-footer-responsive"><!--
+dfp: z > g
+--> <!-- /1022251/desktop-post-general-footer-01_up-responsive --> 
+<DIV id="div-gpt-ad-1442935568936-0" style="text-align: center;"></DIV>
+<DIV id="div-ga-footer"></DIV></DIV></DIV></DIV><!-- #content --> </main> <!-- Footer --> 
+<FOOTER class="site-footer slidable clearfix" id="footer" role="contentinfo">
+<DIV class="container top">
+<DIV class="site-links clearfix">
+<UL>
+  <LI><A href="http://www.hongkiat.com/blog/about-us/">About</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/advertise/">Advertise</A></LI>       
+    
+  <LI><A href="http://www.hongkiat.com/blog/contact/">Contact</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/submit-news-tips/">Submit 
+  Tips</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/authors/">Authors</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/write-for-us/">Write for Us</A></LI> 
+          
+  <LI><A href="http://www.hongkiat.com/blog/publishing-policy/" target="_blank" 
+  rel="nofollow">Publishing Policy</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/privacy-policy-for-hongkiatcom/" 
+  target="_blank" rel="nofollow">Privacy</A></LI>         
+  <LI><A href="http://www.hongkiat.com/blog/sitemap.xml">Sitemap</A></LI>
+			 </UL></DIV>
+<UL class="support-by">
+  <LI><A href="http://www.exabytes.com/" target="_blank" rel="nofollow"><IMG 
+  alt="" src="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/img/exabytes.png"></A></LI>
+  <LI><A href="https://www.maxcdn.com/" target="_blank" rel="nofollow"><IMG alt="" 
+  src="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/img/maxcdn.png"></A></LI></UL></DIV></FOOTER> 
+<SCRIPT type="text/javascript">
+var max_num_pages = "0";
+var theme_uri     = "http://www.hongkiat.com/blog/wp-content/themes/v6";
+</SCRIPT>
+ 
+<DIV class="et_social_pin_images_outer">
+<DIV class="et_social_pinterest_window">
+<DIV class="et_social_modal_header">
+<H3>Pin It on Pinterest</H3><SPAN class="et_social_close"></SPAN></DIV>
+<DIV class="et_social_pin_images" data-post_id="15077" data-title="HTML5 Tutorial: Login Page with HTML5 Forms" 
+data-permalink="http://www.hongkiat.com/blog/html5-loginpage/"></DIV></DIV></DIV>
+<SCRIPT src="http://www.hongkiat.com/blog/wp-content/plugins/monarch/js/idle-timer.min.js?ver=1.2.1" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+/* <![CDATA[ */
+var monarchSettings = {"ajaxurl":"http:\/\/www.hongkiat.com\/blog\/wp-admin\/admin-ajax.php","pageurl":"http:\/\/www.hongkiat.com\/blog\/html5-loginpage\/","stats_nonce":"b6d34d0412","share_counts":"2eda1fb029","follow_counts":"41904bd567","total_counts":"3405f1262a","media_single":"95cef8d5cc","media_total":"dd47154084","generate_all_window_nonce":"a5537a6144","no_img_message":"No images available for sharing on this page"};
+/* ]]> */
+</SCRIPT>
+ 
+<SCRIPT src="http://www.hongkiat.com/blog/wp-content/plugins/monarch/js/custom.js?ver=1.2.1" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+/* <![CDATA[ */
+var ajax = {"root":"http:\/\/www.hongkiat.com\/blog\/wp-json","nonce":"ec53aa116a"};
+/* ]]> */
+</SCRIPT>
+ 
+<SCRIPT src="http://www.hongkiat.com/blog/wp-content/themes/v6/assets/js/scripts.min.js?20150930-1" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="http://www.hongkiat.com/blog/wp-includes/js/wp-embed.min.js?ver=4.4.2" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="http://stats.wp.com/e-201607.js" defer="" type="text/javascript" async=""></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.9.1',blog:'1070734',post:'15077',tz:'8',srv:'www.hongkiat.com'} ]);
+	_stq.push([ 'clickTrackerInit', '1070734', '15077' ]);
+</SCRIPT>
+	     
+<SCRIPT type="text/javascript">var omapi_localized = { ajax: 'http://www.hongkiat.com/blog/wp-admin/admin-ajax.php?optin-monster-ajax-route=1', nonce: '23f60e3c8c' };</SCRIPT>
+	     
+<SCRIPT src="http://static.fmpub.net/site/hongkiat" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="http://hongkiat.us.intellitxt.com/intellitxt/front.asp?ipid=29794" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+SyntaxHighlighter.defaults['toolbar'] = false;
+SyntaxHighlighter.all();
+dp.SyntaxHighlighter.HighlightAll('code');
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+
+(function() {
+	var timeoutID;
+	function setDelay() {
+		timeoutID = setTimeout(showContent, 640);
+	}
+	function showContent() {
+		$('#primary').css('opacity', 1);
+	}
+	setDelay();
+})();
+
+(function() {
+
+	var viewportSize = Modernizr.mq('(min-width: 728px)');
+
+	if ( viewportSize ) {
+		
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1442935568936-0'); });
+
+	} else {
+
+	var adsenseLoaded = false;
+	var adUnit        = document.getElementById('div-ga-footer');
+	var adWidth       = adUnit.offsetWidth;
+		  
+		window.google_ad_client       = "ca-pub-8918970543424762";
+		window.google_ad_slot         = "1981386208";
+		window.google_override_format = true;
+		
+		window.google_ad_width        = adWidth;
+		window.google_ad_height       = 210;
+		window.google_ad_type         = 'text';
+		
+		window.google_font_face       = 'helvetica';
+		window.google_max_num_ads     = '1';
+
+		if ( adUnit && adsenseLoaded === false ) {
+
+			var container = document.getElementById('div-ga-footer');
+			var writeDoc  = document.write;
+
+			document.write = function(content) {
+				container.innerHTML = content;
+				document.write      = writeDoc;
+			};
+
+			var script       = document.createElement('script');
+					script.type  = 'text/javascript';
+					script.src   = 'http://pagead2.googlesyndication.com/pagead/show_ads.js';
+
+					container.appendChild(script);
+
+					adsenseLoaded = true;
+		}
+	
+	}
+})();
+</SCRIPT>
+			 </BODY></HTML>
